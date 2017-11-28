@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.actionbarsherlock.view.MenuItem;
 import com.jeremyfeinstein.slidingmenu.example.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
@@ -81,14 +80,14 @@ public class ResponsiveUIActivity extends SlidingFragmentActivity {
 			.show();
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case android.R.id.home:
-			toggle();
-		}
-		return super.onOptionsItemSelected(item);
-	}
+//	@Override
+//	public boolean onOptionsItemSelected(MenuItem item) {
+//		switch (item.getItemId()) {
+//		case android.R.id.home:
+//			toggle();
+//		}
+//		return super.onOptionsItemSelected(item);
+//	}
 
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
